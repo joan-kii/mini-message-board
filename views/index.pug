@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  main
+    each val in messages
+      div
+        h3= val.user
+        p= val.text
+        small= val.added
+
+    a(href="http://localhost:3000/new"): button(type="button") Write a Message
