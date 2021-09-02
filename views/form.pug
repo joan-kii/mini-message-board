@@ -1,8 +1,11 @@
 extends layout
 
 block content
-  form(method="POST" action="/new")
-    input(type="text", name="user")
-    input(type="text", name="message")
-    button(type="submit") Submit
-  a(href="http://localhost:3000/"): button(type="button") Go Back
+  main
+    section(class="form")
+      form(method="POST" action="/new")
+        input(type="text", name="user")
+        input(type="text", name="message")
+        button(type="submit") Submit
+    section(class="button")
+      a(href="http://localhost:3000/"): button(type="button") Go Back
