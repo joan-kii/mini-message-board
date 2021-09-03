@@ -1,27 +1,29 @@
 var express = require('express');
 var router = express.Router();
 
+const title = 'Mini Messages Board';
+
 const messages = [
   {
-    text: 'Hi there!',
-    user: 'Amando',
+    text: 'Welcome to Mini Message Bord!',
+    user: 'Joankii',
     added: new Date().toLocaleString() 
   },
   {
     text: 'Hello World!',
-    user: 'Charles',
+    user: 'Joankuu',
     added: new Date().toLocaleString() 
   }
 ];
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Mini Messages Board', messages: messages });
+  res.render('index', { title: title, messages: messages });
 });
 
 // GET new message page
 router.get('/new', function(req, res, next) {
-  res.render('form', {title: 'Say Something'})
+  res.render('form', {title: title})
 });
 
 //POST new message
