@@ -1,3 +1,6 @@
-Mini Message Board project created with Express
+## Overview
+This is an exercise for The Odin Project's JavaScript path that emulates a simple message board.
 
-Take a look [here](https://quiet-reef-87259.herokuapp.com/).
+## Dependencies
+  - Express
+  - Pug
